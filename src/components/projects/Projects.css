@@ -1,0 +1,103 @@
+.projects-section {
+  padding: 2rem;
+  text-align: center;
+}
+
+.projects-section h2 {
+  font-size: 2.5rem;
+
+  margin-bottom: 2rem;
+}
+
+.projects-grid {
+  gap: 3rem; /* Increased spacing between projects */
+  justify-content: center;
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+ 
+}
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: repeat(1, 1fr); /* Stack projects on small screens */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr); /* Show two projects per row on medium screens */
+  }
+}
+
+
+.project-card {
+  background: #fff;
+  border-radius: 20px; /* Curvier corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-style: dotted;
+  border-color: black;
+  overflow: hidden;
+  width: 400px; /* Reduced box size */
+  margin: 0 auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.35);
+  background-color:whitesmoke;
+}
+
+.project-image {
+  width: 100%;
+  height: 150px; /* Reduced image height */
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.project-details {
+  padding: 1rem; /* Reduced padding for smaller cards */
+}
+
+.project-details h3 {
+  font-size: 1.2rem; /* Adjusted title size */
+  margin-bottom: 0.5rem;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+.tag {
+  background-color: whitesmoke;
+  color: #6c6346;
+  padding: 0.3rem 0.8rem;
+  border-radius: 10px; /* Slightly curvier tags */
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.project-details p {
+  font-size: 0.9rem; /* Reduced font size for smaller cards */
+  margin: 0.5rem 0 1rem;
+  line-height: 1.4;
+}
+
+.project-details a {
+  text-decoration: none;
+  background-color: #6c63ff;
+  color: #fff;
+  opacity: 70%;
+  padding: 0.5rem 1rem; /* Reduced button size */
+  border-radius: 10px;
+  font-size: 0.9rem; /* Adjusted font size */
+  transition: background-color 0.3s ease;
+}
+
+.project-details a:hover {
+  background-color: #574bd1;
+}
