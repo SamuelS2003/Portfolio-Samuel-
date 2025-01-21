@@ -2,7 +2,7 @@
   "name": "portfolio",
   "private": true,
   "version": "0.0.0",
-  "type": "commonjs",
+  "type": "module",
   "homepage": "https://samuels2003.github.io/Portfolio-Samuel-/",
   "scripts": {
     "predeploy": "npm run build",
